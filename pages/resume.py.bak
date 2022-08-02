@@ -1,0 +1,203 @@
+import streamlit as st
+from PIL import Image
+
+with open("pages/resume_style.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
+#####################
+# Header 
+st.write('''
+# Avinash Anantharamu
+##### *Resume* 
+''')
+
+image = Image.open('db.jpg')
+st.image(image, width=150)
+
+st.markdown('## Summary', unsafe_allow_html=True)
+st.info('''
+- Experienced Educator, Software Engineer with 10+ of experience in platform and data. 
+
+''')
+
+#####################
+# Navigation
+
+st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
+
+st.markdown("""
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
+  <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Chanin Nantasenamat</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#work-experience">Work Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#social-media">Social Media</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+""", unsafe_allow_html=True)
+
+#####################
+# Custom function for printing text
+def txt(a, b):
+  col1, col2 = st.columns([4,1])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+
+def txt2(a, b):
+  col1, col2 = st.columns([1,4])
+  with col1:
+    st.markdown(f'`{a}`')
+  with col2:
+    st.markdown(b)
+
+def txt3(a, b):
+  col1, col2 = st.columns([1,2])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+  
+def txt4(a, b, c):
+  col1, col2, col3 = st.columns([1.5,2,2])
+  with col1:
+    st.markdown(f'`{a}`')
+  with col2:
+    st.markdown(b)
+  with col3:
+    st.markdown(c)
+
+
+
+#####################
+st.markdown('''
+## Work Experience
+''')
+
+txt('**Head, Center of Data Mining and Biomedical Informatics**, Faculty of Medical Technology, Mahidol University, Thailand',
+'2011-2021')
+st.markdown('''
+- Managing a Center of `10` professors, researchers and students to ensure KPIs are strategically achieved namely to publish at least `20+` research publications annually. 
+- Actively took part in the talent hiring process as well as help employees to plan and develop their career path.
+- Set budget and handle procurement in order to facilitate education and research activities. Secured `> 10 million THB` budget.
+- Set and reflect on OKR on an annual basis to ensure productivity strategically matches the organization's direction.
+''')
+
+txt('**Associate Professor**, Faculty of Medical Technology, Mahidol University, Thailand',
+'2012-2021')
+txt('**Assistant Professor**, Faculty of Medical Technology, Mahidol University, Thailand',
+'2009-2012')
+txt('**Lecturer**, Faculty of Medical Technology, Mahidol University, Thailand',
+'2006-2009')
+st.markdown('''
+- Provided mentorship and supervision to junior faculty, researchers, Ph.D./M.Sc./B.Sc. students. Mentored `3` Post-doctoral fellows, supervised `13` Ph.D. students, supervised `8` M.Sc. students, supervised `13` B.Sc. students and hosted `6` visiting students from U.S., Sweden and India.
+- Wrote and applied for research grants. Served as Principal Investigator for research grants that have been awarded `12.5 million THB` and `1.117 million SEK` in research funding from Thai and Swedish grant agencies.
+- Conducted research by applying machine learning to computational drug discovery and ensuring that research output exceeds `20+` articles per year.
+- Taught `10+` undergraduate/graduate classes on Bioinformatics, Data Mining, Scientific Research and Presentation, Research Methodology, Graduate Seminar, Programming for Health Data Science, etc.
+- Peer reviewed `100+` research articles for leading scientific journals.
+''')
+
+txt('**Co-Chair**, International Conference on Pharmaceutical Bioinformatics at Pattaya, Thailand',
+'2016')
+st.markdown('''
+- Oversee all aspects of the conference preparations from conception to launch. This include inviting keynote and plenary speakers, create advertisement flyers, create abstract book, etc.
+- Conference attracted `200+` participants from `40+` countries from university and industry sector.
+- Chaired keynote session, technical workshop and some of the parallel sessions.
+''')
+
+txt('**Content Creator**, [Data Professor YouTube Channel](https://youtube.com/dataprofessor/)',
+'2019-Present')
+st.markdown('''
+- `100,000+` subscribers on YouTube
+- Created `261` educational videos on data science, machine learning and bioinformatics as well as hosted several podcast episodes with data scientists.
+- Created `3` sponsored videos for Notion, Gradio and Classpert.
+''')
+
+txt('**Content Creator**, [Coding Professor YouTube Channel](https://youtube.com/codingprofessor/)',
+'2019-Present')
+st.markdown('''
+- `3,200+` subscribers on YouTube
+- Created `38` educational videos on Python and R programming.
+''')
+
+txt('**Technical Writer**, [Data Professor Blog](https://data-professor.medium.com/) on Medium.com',
+'2019-Present')
+st.markdown('''
+- `4,100+` subscribers on Medium
+- Written `68` technical blogs on data science, machine learning and bioinformatics.
+''')
+
+
+#####################
+st.markdown('''
+## Education
+''')
+
+txt('**Master of Science** (Computer Science), *San Jose State Univeristy*, United States',
+'2012-2014')
+st.markdown('''
+- GPA: `3.5`
+- Coursework:  
+    - CS 255 : Design and Analysis of Algorithms 
+    - CS 249 : Distributed Computing 
+    - CS 257 : Data Base System Principles
+    - CS 267 : Topics in Database Systems
+    - CS 251A : Object-Oriented Analysis
+    - CS 251B : Object-Oriented Design 
+    - CS 274 : Topics in XML and Web Intelligence
+    - CS 180I : Internship 
+    - CS 297 : Preparation for Writing Project
+    - CS 298 : Master's Writing Project
+''')
+
+txt('**Bachelors of Engineering** (Computer Science), *VTU*, India',
+'2006-2010')
+st.markdown('''
+- GPA: `75`
+- Graduated with First Class Distinction .
+''')
+
+
+####################
+st.markdown('''
+## Certification 
+''')
+txt('**Microsoft Azure Fundamentals Certified**, [AZ-900](https://www.credly.com/badges/6aaae579-64d8-4e94-9d9d-b5f81106bd7b?source=linked_in_profile)',
+'July 2022-Present')
+txt('**Microsoft Azure AI Fundamentals Certified**, [AI-900](https://www.credly.com/badges/c01d6d82-df51-43b2-a267-fd8c7d8898b7?source=linked_in_profile)',
+'July 2022-Present')
+
+
+#####################
+st.markdown('''
+## Skills
+''')
+txt3('Programming', '`Python`, `C++`, `Linux`')
+txt3('Data processing/wrangling', '`SQL`, `pandas`')
+txt3('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
+txt3('Machine Learning', '`scikit-learn`')
+txt3('Web development', '`Flask`, `HTML`, `CSS`')
+txt3('Model deployment', '`streamlit`, `Azure`')
+
+#####################
+st.markdown('''
+## Social Media
+''')
+txt2('LinkedIn', 'https://www.linkedin.com/in/anantharamuavinash')
+txt2('GitHub', 'https://github.com/naashonomics/')
+
