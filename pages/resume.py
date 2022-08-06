@@ -103,6 +103,13 @@ st.markdown('''
 - Skills: PERL , Python, C++ , Jenkins , Streamlit 
 ''')
 
+txt('**Senior Software Engineer**, Synopsys , Sunnyvale , United States',
+'2014-2020')
+st.markdown('''
+- Worked with Verification Projects on Zebu (Emulation) and HAPS (prototypying) platforms 
+- Skills: Python, C++ , Jenkins , Streamlit , Pandas , ELK , Scikit Learn, MongoDB and SQL  
+''')
+
 #####################
 st.markdown('''
 ## Education
@@ -131,6 +138,13 @@ st.markdown('''
 - GPA: `75`
 - Graduated with First Class Distinction .
 ''')
+
+#####################
+st.markdown('''
+## Patents 
+''')
+txt('**Machine Learning Enchnaced Compiler**, [US11366948B2](https://pdfpiw.uspto.gov/.piw?Docid=11366948&homeurl=http%3A%2F%2Fpatft.uspto.gov%2Fnetacgi%2Fnph-Parser%3FSect1%3DPTO2%2526Sect2%3DHITOFF%2526p%3D1%2526u%3D%25252Fnetahtml%25252FPTO%25252Fsearch-bool.html%2526r%3D1%2526f%3DG%2526l%3D50%2526co1%3DAND%2526d%3DPTXT%2526s1%3D%252522MACHINE-LEARNING%252BENHANCED%252BCOMPILER%252522%2526OS%3D%2526RS%3D&PageNum=&Rtype=&SectionNum=&idkey=NONE&Input=View+first+page)',
+'July 2022')
 
 
 ####################
