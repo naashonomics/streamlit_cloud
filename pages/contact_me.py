@@ -16,3 +16,9 @@ contact_form = """
 
 st.markdown(contact_form, unsafe_allow_html=True)
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+		
+
+local_css("pages/contact_form_style.css")
