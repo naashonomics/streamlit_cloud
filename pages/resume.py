@@ -26,7 +26,7 @@ st.info('''
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 st.markdown("""
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #6495ED;">
   <a class="navbar-brand" href="https://youtube.com/channel/UC5ASIl3Js_XSsb95sedH5kQ" target="_blank">Avinash Anantharamu</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -37,13 +37,25 @@ st.markdown("""
         <a class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#work-experience">Work Experience</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#patents">Patents</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#certification">Certifications</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#work-experience">Work Experience</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#patents">Patents</a>
       </li>
     </ul>
   </div>
