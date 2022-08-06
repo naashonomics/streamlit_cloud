@@ -27,7 +27,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
-  <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Chanin Nantasenamat</a>
+  <a class="navbar-brand" href="https://youtube.com/channel/UC5ASIl3Js_XSsb95sedH5kQ" target="_blank">Avinash Anantharamu</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -92,10 +92,16 @@ st.markdown('''
 txt('**Senior Software Engineer**, ASML, San Jose , United States',
 '2022-Current')
 st.markdown('''
-- Working with Brion Platform Group on Computational Lithography Products . 
+- Working with Brion Platform Group on Computational Lithography Products ranging from OPC, LMC and SMO.
+- Skills: PERL , Python , Azure , MongoDB and SQL  
 ''')
 
-
+txt('**Lead Software Engineer**,Cadence Design System , San Jose , United States',
+'2020-2022')
+st.markdown('''
+- Worked with Design group on Virtuso, Conformal  and CAT 
+- Skills: PERL , Python, C++ , Jenkins , Streamlit 
+''')
 
 #####################
 st.markdown('''
