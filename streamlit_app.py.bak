@@ -5,7 +5,6 @@ import os,calendar  # Core Python Module
 from datetime import datetime  # Core Python Module
 import plotly.graph_objects as go  # pip install plotly
 from streamlit_option_menu import option_menu  # pip install streamlit-option-menu
-import pages.database as db  # local import
 from deta import Deta  # pip install deta
 from dotenv import load_dotenv
 load_css()
