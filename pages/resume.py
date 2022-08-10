@@ -171,6 +171,13 @@ txt('**Microsoft Azure AI Fundamentals Certified**, [AI-900](https://www.credly.
 
 #####################
 st.markdown('''
+## Projects
+''')
+txt('**Personal expense tracker**, [streamlit, demodb , plotly] (https://naashonomics-streamlit-cloud-streamlit-app-tgu0tp.streamlitapp.com/expense_tracker)',
+'August 2022')
+
+#####################
+st.markdown('''
 ## Skills
 ''')
 txt3('Programming', '`Python`, `C++`, `Linux`')

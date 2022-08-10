@@ -45,6 +45,9 @@ st.markdown("""
       <li class="nav-item">
         <a class="nav-link" href="#patents">Patents</a>
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#certification">Certifications</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="#work-experience">Work Experience</a>
       </li>
@@ -165,6 +168,13 @@ txt('**Microsoft Azure Fundamentals Certified**, [AZ-900](https://www.credly.com
 txt('**Microsoft Azure AI Fundamentals Certified**, [AI-900](https://www.credly.com/badges/c01d6d82-df51-43b2-a267-fd8c7d8898b7?source=linked_in_profile)',
 'July 2022-Present')
 
+
+#####################
+st.markdown('''
+## Projects
+''')
+txt('**Personal expense tracker**, [streamlit, demodb , plotly] (https://naashonomics-streamlit-cloud-streamlit-app-tgu0tp.streamlitapp.com/expense_tracker)',
+'July 2022-Present')
 
 #####################
 st.markdown('''
