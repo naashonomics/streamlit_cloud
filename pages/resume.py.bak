@@ -84,6 +84,7 @@ def txt3(a, b):
     st.markdown(a)
   with col2:
     st.markdown(b)
+    
   
 def txt4(a, b, c):
   col1, col2, col3 = st.columns([1.5,2,2])
@@ -94,8 +95,14 @@ def txt4(a, b, c):
   with col3:
     st.markdown(c)
 
-
-
+def txt5(a, b,c):
+  col1, col2 = st.columns([2,2,2])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+  with col3:
+    st.markdown(c)
 #####################
 st.markdown('''
 ## Work Experience
@@ -173,7 +180,7 @@ txt('**Microsoft Azure AI Fundamentals Certified**, [AI-900](https://www.credly.
 st.markdown('''
 ## Projects
 ''')
-txt('**Personal expense tracker**, [Demo](https://naashonomics-streamlit-cloud-streamlit-app-tgu0tp.streamlitapp.com/expense_tracker)', '[Streamlit,Demo DB,Plotly]' ,'August 2022')
+txt('**Personal expense tracker**, [Demo](https://naashonomics-streamlit-cloud-streamlit-app-tgu0tp.streamlitapp.com/expense_tracker)' ,'August 2022')
 
 #####################
 st.markdown('''
