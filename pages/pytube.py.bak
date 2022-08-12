@@ -1,26 +1,30 @@
-import streamlit as st
-import pandas as pd
-from pytube import YouTube
-import base64
-from io import BytesIO
-def main():
-	path = st.text_input('Enter URL of any youtube video')
-	option = st.selectbox(
-     'Select type of download',
-     ('audio', 'highest_resolution', 'lowest_resolution'))
-	
-	matches = ['audio', 'highest_resolution', 'lowest_resolution']
-	if st.button("download"): 
-		video_object =  YouTube(path)
-		st.write("Title of Video: " + str(video_object.title))
-		st.write("Number of Views: " + str(video_object.views))
-		if option=='audio':
-			video_object.streams.get_audio_only().download('~/Downloads') 		#base64.b64encode("if file is too large").decode()	
-		elif option=='highest_resolution':
-			video_object.streams.get_highest_resolution().download('~/Downloads')
-		elif option=='lowest_resolution':
-			video_object.streams.get_lowest_resolution().download('~/Downloads')
-	if st.button("view"): 
-		st.video(path) 
-if __name__ == '__main__':
-	main()
+import streamlit as stfrom pytube import YouTube
+st.title("Youtube Video Donwloader")
+st.subheader("Enter the URL:")
+url = st.text_input(label='URL')
+yt = YouTube(url)
+print(yt.streams)
+if url != '':
+    yt = YouTube(url)
+    st.image(yt.thumbnail_url, width=300)
+    st.subheader('''
+    {}
+    ## Length: {} seconds
+    ## Rating: {} 
+    '''.format(yt.title , yt.length , yt.rating))
+    video = yt.streams
+    if len(video) > 0:
+        downloaded , download_audio = False , False
+        download_video = st.button("Download Video")
+        if yt.streams.filter(only_audio=True):
+            download_audio = st.button("Download Audio Only")
+        if download_video:
+            video.get_lowest_resolution().download()
+            downloaded = True
+        if download_audio:
+            video.filter(only_audio=True).first().download()
+            downloaded = True
+        if downloaded:
+            st.subheader("Download Complete")
+    else:
+        st.subheader("Sorry, this video can not be downloaded")
