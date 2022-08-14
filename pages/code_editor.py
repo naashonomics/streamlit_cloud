@@ -1,10 +1,11 @@
 import streamlit as st
 
 from streamlit_ace import st_ace, KEYBINDINGS, LANGUAGES, THEMES
-from streamlit_gallery.utils.readme import readme
+from pages.utils.readme import readme
 
 
 def main():
+    st.title("Demo Code Editor")
     with readme("streamlit-ace", st_ace, __file__):
         c1, c2 = st.columns([3, 1])
 
